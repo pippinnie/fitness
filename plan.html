@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Nattira's Fittess</title>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plan.html">Workout Plan</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="inspiration.html">Inspiration</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Create your workout plan</h1>
+        <form action="/form-handling-url" method="post">
+            <fieldset>
+                <legend>Your workout preferences</legend>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <div>
+                    <label for="age">Age</label>
+                    <input type="text" id="age" name="age">
+                </div>
+
+                <div>
+                    <span>Preferred workout type</span>
+                    <input type="checkbox" id="cardio" name="cardio">
+                    <label for="cardio">Cardio</label>
+
+                    <input type="checkbox" id="hiit" name="workout_type" value="hiit">
+                    <label for="hiit">HIIT</label><br>
+
+                    <input type="checkbox" id="strength" name="workout_type" value="strength_training">
+                    <label for="strength">Strength Training</label><br>
+
+                    <input type="checkbox" id="yoga" name="workout_type" value="yoga">
+                    <label for="yoga">Yoga</label><br>
+
+                    <input type="checkbox" id="pilates" name="workout_type" value="pilates">
+                    <label for="pilates">Pilates</label><br>
+                </div>
+
+                <div>
+                    <span>Preferred workout duration</span>
+                    <input type="radio" id="15_to_30" name="workout_duration" value="15_to_30">
+                    <label for="15_to_30">15–30 minutes</label><br>
+
+                    <input type="radio" id="31_to_45" name="workout_duration" value="31_to_45">
+                    <label for="31_to_45">31–45 minutes</label><br>
+
+                    <input type="radio" id="46_to_60" name="workout_duration" value="46_to_60">
+                    <label for="46_to_60">46–60 minutes</label><br>
+
+                    <input type="radio" id="61_to_90" name="workout_duration" value="61_to_90">
+                    <label for="61_to_90">61–90 minutes</label><br>
+                </div>
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
